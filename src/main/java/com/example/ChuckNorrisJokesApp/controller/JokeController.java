@@ -17,8 +17,9 @@ public class JokeController {
     }
 
     /*
-    * Spring attribute name must match the thymeleaf attribute name th:text="${...}"
+    * Model attribute name must match the thymeleaf attribute name th:text="${...}"
     * Adds JokeService text to 'joke' property of Model
+    * Finally, maps the model with invoked joke service to Thymeleaf form and return it
     * */
     @GetMapping("/")
     public String showJoke(Model model) {
